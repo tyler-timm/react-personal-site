@@ -5,6 +5,9 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+  font-family: sans-serif;
+  background-color: rgb(48, 48, 48);
+  color: white
 }
 
 .description {
@@ -70,6 +73,11 @@
   font-size: 0.9rem;
   line-height: 1.5;
   max-width: 30ch;
+}
+
+.resumeName {
+    text-decoration-color: 'steelblue';
+    font-size: 2rem
 }
 
 .center {
