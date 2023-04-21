@@ -3,11 +3,8 @@ import Image from 'next/image';
 import styles from '@/styles/Home.module.css';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-    faSearch,
-    faAmbulance,
-    faAnchor,
-} from "@fortawesome/free-solid-svg-icons";
+import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 
 import { useState } from "react";
 
@@ -85,12 +82,8 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className={styles.main}>
-                <div className={styles.resumeName}>Tyler Timm</div>
-                <FontAwesomeIcon
-                    icon={faSearch}
-                    style={{ fontSize: 100, color: "blue" }}
-                />
-                Skills
+                <div className={styles.resumeName}><FontAwesomeIcon icon={faUser} />&nbsp;&nbsp;&nbsp;&nbsp; Tyler Timm &nbsp;&nbsp;&nbsp;&nbsp;<FontAwesomeIcon icon={faLaptopCode} /></div>
+                <div className={styles.resumeName}>Skills</div>
                 <ListSkills />
                 <br />
             </main>
