@@ -1,13 +1,29 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
   font-family: sans-serif;
-  background-color: rgb(48, 48, 48);
+  background-color: #222;
   color: white
+}
+
+.resumeName {
+    color: steelblue;
+    font-size: 3rem
+}
+
+.sectionHead {
+    color: slategray;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.skills {
+    color: white;
+
 }
 
 .description {
@@ -73,11 +89,6 @@
   font-size: 0.9rem;
   line-height: 1.5;
   max-width: 30ch;
-}
-
-.resumeName {
-    text-decoration-color: 'steelblue';
-    font-size: 2rem
 }
 
 .center {
