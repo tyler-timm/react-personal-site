@@ -11,19 +11,31 @@
 }
 
 .resumeName {
-    color: steelblue;
+    color: white;
     font-size: 3rem
 }
 
 .sectionHead {
-    color: slategray;
+    color: gray;
     font-size: 2rem;
     padding: 2rem;
 }
 
 .skills {
     color: white;
+}
 
+.skillsList {
+    list-style: none;
+    font-size: 1.25rem
+}
+
+.workExp {
+    font-size: 1.1rem
+}
+
+.education {
+    font-size: 1.1rem
 }
 
 .description {

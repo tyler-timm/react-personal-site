@@ -2,9 +2,18 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '@/styles/Home.module.css';
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { FaLaptopCode } from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
+import { FaJs } from "react-icons/fa";
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3 } from "react-icons/fa";
+import { FaFilePdf } from "react-icons/fa";
+import { FaDatabase } from "react-icons/fa";
+import { MdAdminPanelSettings } from "react-icons/md";
+import { SiMicrosoftoffice } from "react-icons/si";
+import { FaPhone } from "react-icons/fa";
+import { FaMobile } from "react-icons/fa";
+import { SiOracle } from "react-icons/si";
 
 import { useState } from "react";
 
@@ -19,50 +28,69 @@ const skills = [
     {
         key: 0,
         name: 'JavaScript',
+        icon: <FaJs />
     },
     {
         key: 1,
-        name: 'SuiteScript'
+        name: 'SuiteScript',
+        icon: <FaJs />
     },
     {
         key: 2,
-        name: 'HTML/CSS'
+        name: 'HTML',
+        icon: <FaHtml5 />
     },
     {
         key: 3,
-        name: 'FreeMarker'
+        name: 'CSS',
+        icon: <FaCss3 />
     },
     {
         key: 4,
-        name: 'NetSuite Development'
+        name: 'FreeMarker',
+        icon: <FaFilePdf />
     },
     {
         key: 5,
-        name: 'NetSuite Administration'
+        name: 'NetSuite Development',
+        icon: <SiOracle />
     },
     {
         key: 6,
-        name: 'Microsoft 365 Administration'
+        name: 'NetSuite Administration',
+        icon: <MdAdminPanelSettings />
     },
     {
         key: 7,
-        name: 'VOIP Phone Administration'
+        name: 'Microsoft 365 Administration',
+        icon: <SiMicrosoftoffice />
     },
     {
         key: 8,
-        name: 'Mobile Device Management'
+        name: 'VOIP Phone Administration',
+        icon: <FaPhone />
     },
     {
         key: 9,
-        name: 'Microsoft Office Applications'
+        name: 'Mobile Device Management',
+        icon: <FaMobile />
+    },
+    {
+        key: 10,
+        name: 'Microsoft Office Applications',
+        icon: <SiMicrosoftoffice />
     }
 ];
 
 function ListSkills() {
     const skillsList = skills.map(skill => {
-        return <li>{skill.name}</li>
+        if (skill.icon) {
+            return <li>{skill.icon} {skill.name}</li>
+        } else {
+            return <li>{skill.name}</li>
+        }
     });
-    return <ul>{skillsList}</ul>;
+    return <ul className={styles.skillsList}>{skillsList}</ul>;
 }
 
 export default function Home() {
@@ -74,52 +102,57 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className={styles.main}>
-                <div className={styles.resumeName}><FontAwesomeIcon icon={faUser} />&nbsp;&nbsp;&nbsp;&nbsp; Tyler Timm &nbsp;&nbsp;&nbsp;&nbsp;<FontAwesomeIcon icon={faLaptopCode} /></div>
+                <div className={styles.resumeName}><FaUser />&nbsp;&nbsp;&nbsp;&nbsp; Tyler Timm &nbsp;&nbsp;&nbsp;&nbsp;<FaLaptopCode /></div>
                 <div>
-                <div className={styles.sectionHead}>SKILLS</div>
-                <div className={styles.skills}>
-                    <ListSkills />
-                </div>
-                <br /><br />
-                <div className={styles.sectionHead}>WORK EXPERIENCE</div>
-                    <p>
+                    <div className={styles.sectionHead}>SKILLS</div>
+                    <div className={styles.skills}>
+                        <ListSkills />
+                    </div>
+                    <br /><br />
+                    <div className={styles.sectionHead}>WORK EXPERIENCE</div>
+                    <p className={styles.workExp}>
                         NetSuite Software Developer<br />
                         Global Data Systems, St. Louis, MO<br />
                         Feb 2022 - Nov 2022 (Independent Contractor - Part Time)<br />
                         Nov 2022 - Present (Full Time)<br />
                         Major Projects:<br />
-                        Custom Map Interface: Suitelet that renders page from HTML, CSS, Javascript files. Uses Google Maps, including Drawing Manager library to draw on top of map and save objects to custom NetSuite record attached to customers<br />
-                        Scheduler Component: Suitelet that renders page from HTML, CSS, Javascript files. Multiple calendar views with drag and drop events that loads data from NetSuite and updates NetSuite custom records<br />
-                        Onsight Map Interface: Suitelet that renders page from HTML, CSS, Javascript files. Google Maps based Suitelet interface showing work order locations on top of google map, allows changes to be made to NetSuite records from interface<br />
+                        <ul>
+                            <li>Integrated Applications within "Suitelets":</li>
+                            <ul>
+                                <li>Custom Map Interface: Uses Google Maps API, to allow user to draw shapes on map at custom location, calulcate area and perimeter, and save map state to custom NetSuite record attached to customer  </li>
+                                <li>Scheduler Component: Multiple calendar views with drag and drop events that loads data from NetSuite and updates NetSuite custom records</li>
+                                <li>Onsight Map Interface: Google Maps based Suitelet interface showing field work order, field worker, warehouse locations on google map, allows changes to be made to NetSuite records from interface</li>
+                            </ul>
+                        </ul>
                         <br />
                         IT Systems Administrator / Junior Developer<br />
                         ATIS Elevator Inspections, St. Louis, MO<br />
                         March 2019 - Nov 2022<br />
                         <br />
                         Responsibilities:<br />
-                        NetSuite feature development in JavaScript (SuiteScript)<br />
-                        Advanced PDF/HTML template creation for custom records and transactions<br />
-                        NetSuite and Office 365 user administration and support<br />
-                        Train elevator inspectors and office staff on use of inspection app and scheduling process<br />
-                        Build reports to track adoption of new features, business metrics<br />
-                        Phone system management and support (internal and virtual contact center) 8x8 - VOIP<br />
-                        iPhone and iPad mobile device management via Intune/Microsoft Endpoint Manager<br />
-                        Major Projects:<br />
-                        Adapted and maintained elevator inspection process on NetSuite Mobile app for Virginia, Florida, Missouri, Illinois, Wisconsin, and Colorado<br />
-                        Created documentation and trained office staff and inspectors on process while continually soliciting feedback for improvements or necessary changes<br />
-                        Customized and used NetSuite Support Cases for IT Help Desk and other department use<br />
-                        Created NetSuite online form to allow customers and partners to request inspections<br />
-                        <br />
+                        <ul>
+                            <li>NetSuite feature development in JavaScript (SuiteScript)</li>
+                            <li>Advanced PDF/HTML template creation for custom records and transactions</li>
+                            <li>Train elevator inspectors and office staff on use of inspection app and scheduling process</li>
+                            <li>System Administrator: NetSuite, Office 365, 8x8 (VOIP)</li>
+                            <li>Mobile Device Management via Intune/Microsoft Endpoint Manager</li>
+                        </ul>
+                        Major Projects:
+                        <ul>
+                            <li>Developed and maintained elevator inspection process on NetSuite Mobile app for Virginia, Florida, Missouri, Illinois, Wisconsin, and Colorado</li>
+                            <li>Created documentation and trained office staff and inspectors on process while continually soliciting feedback for improvements or necessary changes</li>
+                            <li>Implemented and used NetSuite support cases for IT Help Desk and other department use</li>
+                        </ul>
                     </p>
                     <div className={styles.sectionHead}>EDUCATION</div>
-                    <p>
+                    <p className={styles.education}>
                         B.A. Computer Science<br />
                         December 2018<br />
                         University of Iowa, Iowa City, IA
                     </p>
                 </div>
                 <br />
-            </main>
+            </main >
         </>
     )
 }
