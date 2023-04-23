@@ -113,12 +113,16 @@ export default function Home() {
                     <p className={styles.workExp}>
                         NetSuite Software Developer<br />
                         Global Data Systems, St. Louis, MO<br />
-                        Feb 2022 - Nov 2022 (Independent Contractor - Part Time)<br />
-                        Nov 2022 - Present (Full Time)<br />
+                        <span className={styles.indent1}>
+                            Feb 2022 - Nov 2022 (Independent Contractor - Part Time)<br />
+                        </span>
+                        <span className={styles.indent1}>
+                            Nov 2022 - Present (Full Time)<br />
+                        </span>
                         Major Projects:<br />
-                        <ul>
+                        <ul className={styles.indent1}>
                             <li>Integrated Applications within "Suitelets":</li>
-                            <ul>
+                            <ul className={styles.indent2}>
                                 <li>Custom Map Interface: Uses Google Maps API, to allow user to draw shapes on map at custom location, calulcate area and perimeter, and save map state to custom NetSuite record attached to customer  </li>
                                 <li>Scheduler Component: Multiple calendar views with drag and drop events that loads data from NetSuite and updates NetSuite custom records</li>
                                 <li>Onsight Map Interface: Google Maps based Suitelet interface showing field work order, field worker, warehouse locations on google map, allows changes to be made to NetSuite records from interface</li>
