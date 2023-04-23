@@ -122,11 +122,9 @@ export default function Home() {
                         Major Projects:<br />
                         <ul className={styles.indent1}>
                             <li>Integrated Applications within "Suitelets":</li>
-                            <ul className={styles.indent2}>
-                                <li>Custom Map Interface: Uses Google Maps API, to allow user to draw shapes on map at custom location, calulcate area and perimeter, and save map state to custom NetSuite record attached to customer  </li>
-                                <li>Scheduler Component: Multiple calendar views with drag and drop events that loads data from NetSuite and updates NetSuite custom records</li>
-                                <li>Onsight Map Interface: Google Maps based Suitelet interface showing field work order, field worker, warehouse locations on google map, allows changes to be made to NetSuite records from interface</li>
-                            </ul>
+                            <li className={styles.indent2}>Custom Map Interface: Uses Google Maps API, to allow user to draw shapes on map at custom location, calulcate area and perimeter, and save map state to custom NetSuite record attached to customer</li>
+                            <li className={styles.indent2}>Scheduler Component: Multiple calendar views with drag and drop events that loads data from NetSuite and updates NetSuite custom records</li>
+                            <li className={styles.indent2}>Onsight Map Interface: Google Maps based Suitelet interface showing field work order, field worker, warehouse locations on google map, allows changes to be made to NetSuite records from interface</li>
                         </ul>
                         <br />
                         IT Systems Administrator / Junior Developer<br />
@@ -134,7 +132,7 @@ export default function Home() {
                         March 2019 - Nov 2022<br />
                         <br />
                         Responsibilities:<br />
-                        <ul>
+                        <ul className={styles.indent1}>
                             <li>NetSuite feature development in JavaScript (SuiteScript)</li>
                             <li>Advanced PDF/HTML template creation for custom records and transactions</li>
                             <li>Train elevator inspectors and office staff on use of inspection app and scheduling process</li>
@@ -142,7 +140,7 @@ export default function Home() {
                             <li>Mobile Device Management via Intune/Microsoft Endpoint Manager</li>
                         </ul>
                         Major Projects:
-                        <ul>
+                        <ul className={styles.indent1}>
                             <li>Developed and maintained elevator inspection process on NetSuite Mobile app for Virginia, Florida, Missouri, Illinois, Wisconsin, and Colorado</li>
                             <li>Created documentation and trained office staff and inspectors on process while continually soliciting feedback for improvements or necessary changes</li>
                             <li>Implemented and used NetSuite support cases for IT Help Desk and other department use</li>
