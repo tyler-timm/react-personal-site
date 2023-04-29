@@ -85,7 +85,7 @@ const skills = [
 function ListSkills() {
     const skillsList = skills.map(skill => {
         if (skill.icon) {
-            return <li>{skill.icon} {skill.name}</li>
+            return <li>{skill.icon} &nbsp; {skill.name}</li>
         } else {
             return <li>{skill.name}</li>
         }
@@ -108,9 +108,8 @@ export default function Home() {
                     <div className={styles.skills}>
                         <ListSkills />
                     </div>
-                    <br /><br />
                     <div className={styles.sectionHead}>WORK EXPERIENCE</div>
-                    <p className={styles.workExp}>
+                    <div className={styles.workExp}>
                         NetSuite Software Developer<br />
                         Global Data Systems, St. Louis, MO<br />
                         <span className={styles.indent1}>
@@ -119,6 +118,7 @@ export default function Home() {
                         <span className={styles.indent1}>
                             Nov 2022 - Present (Full Time)<br />
                         </span>
+                        <br />
                         Major Projects:<br />
                         <ul className={styles.indent1}>
                             <li>Integrated Applications within "Suitelets":</li>
@@ -127,7 +127,7 @@ export default function Home() {
                             <li className={styles.indent2}>Onsight Map Interface: Google Maps based Suitelet interface showing field work order, field worker, warehouse locations on google map, allows changes to be made to NetSuite records from interface</li>
                         </ul>
                         <br />
-                        IT Systems Administrator / Junior Developer<br />
+                        Junior Developer / IT Systems Administrator<br />
                         ATIS Elevator Inspections, St. Louis, MO<br />
                         March 2019 - Nov 2022<br />
                         <br />
@@ -139,13 +139,14 @@ export default function Home() {
                             <li>System Administrator: NetSuite, Office 365, 8x8 (VOIP)</li>
                             <li>Mobile Device Management via Intune/Microsoft Endpoint Manager</li>
                         </ul>
+                        <br />
                         Major Projects:
                         <ul className={styles.indent1}>
                             <li>Developed and maintained elevator inspection process on NetSuite Mobile app for Virginia, Florida, Missouri, Illinois, Wisconsin, and Colorado</li>
                             <li>Created documentation and trained office staff and inspectors on process while continually soliciting feedback for improvements or necessary changes</li>
                             <li>Implemented and used NetSuite support cases for IT Help Desk and other department use</li>
                         </ul>
-                    </p>
+                    </div>
                     <div className={styles.sectionHead}>EDUCATION</div>
                     <p className={styles.education}>
                         B.A. Computer Science<br />

@@ -3,26 +3,26 @@
   flex-direction: column;
   /* justify-content: space-between; */
   align-items: center;
-  padding: 6rem;
+  padding: 4rem;
   min-height: 100vh;
   font-family: sans-serif;
-  background-color: #222;
-  color: white
+  background-color: #264653;
+  color: #FFF
 }
 
 .resumeName {
-    color: white;
+    color: #FFF;
     font-size: 3rem
 }
 
 .sectionHead {
-    color: gray;
+    color: #F4A261;
     font-size: 2rem;
     padding: 2rem;
 }
 
 .skills {
-    color: white;
+    color: #FFF;
 }
 
 .skillsList {
@@ -31,15 +31,15 @@
 }
 
 .workExp {
-    font-size: 1.1rem
+    font-size: 1.25rem
 }
 
 .education {
-    font-size: 1.1rem
+    font-size: 1.25rem
 }
 
 .indent1 {
-    margin: 0 1rem;
+    margin: 0 2rem;
 }
 
 .indent2 {
