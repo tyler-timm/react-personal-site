@@ -85,9 +85,9 @@ const skills = [
 function ListSkills() {
     const skillsList = skills.map(skill => {
         if (skill.icon) {
-            return <li>{skill.icon} &nbsp; {skill.name}</li>
+            return <li key={skill.key}>{skill.icon} &nbsp; {skill.name}</li>
         } else {
-            return <li>{skill.name}</li>
+            return <li key={skill.key}>{skill.name}</li>
         }
     });
     return <ul className={styles.skillsList}>{skillsList}</ul>;
@@ -110,26 +110,33 @@ export default function Home() {
                     </div>
                     <div className={styles.sectionHead}>WORK EXPERIENCE</div>
                     <div className={styles.workExp}>
-                        NetSuite Software Developer<br />
-                        Global Data Systems, St. Louis, MO<br />
-                        <span className={styles.indent1}>
-                            Feb 2022 - Nov 2022 (Independent Contractor - Part Time)<br />
-                        </span>
-                        <span className={styles.indent1}>
-                            Nov 2022 - Present (Full Time)<br />
-                        </span>
+                        <div className={styles.textSection}>
+                            <Image src='/GDSLogo.png' height={100} width={253} className={styles.imgOutline}/>
+                            <div className={styles.workRole}>
+                                NetSuite Software Developer<br />
+                                Global Data Services, St. Louis, MO<br />
+                                Feb 2022 - Nov 2022 (Independent Contractor - Part Time)<br />
+                                Nov 2022 - Present (Full Time)<br />
+                            </div>
+                        </div>
+
                         <br />
-                        Major Projects:<br />
+                        Major Projects:
+                        <br />
                         <ul className={styles.indent1}>
                             <li>Integrated Applications within "Suitelets":</li>
                             <li className={styles.indent2}>Custom Map Interface: Uses Google Maps API, to allow user to draw shapes on map at custom location, calulcate area and perimeter, and save map state to custom NetSuite record attached to customer</li>
                             <li className={styles.indent2}>Scheduler Component: Multiple calendar views with drag and drop events that loads data from NetSuite and updates NetSuite custom records</li>
                             <li className={styles.indent2}>Onsight Map Interface: Google Maps based Suitelet interface showing field work order, field worker, warehouse locations on google map, allows changes to be made to NetSuite records from interface</li>
                         </ul>
-                        <br />
-                        Junior Developer / IT Systems Administrator<br />
-                        ATIS Elevator Inspections, St. Louis, MO<br />
-                        March 2019 - Nov 2022<br />
+                        <div className={styles.textSection}>
+                            <Image src='/ATISLogo.svg' height={100} width={262} className={styles.imgOutline}/>
+                            <div className={styles.workRole}>
+                                Junior Developer / IT Systems Administrator<br />
+                                ATIS Elevator Inspections, St. Louis, MO<br />
+                                March 2019 - Nov 2022<br />
+                            </div>
+                        </div>
                         <br />
                         Responsibilities:<br />
                         <ul className={styles.indent1}>
@@ -148,11 +155,16 @@ export default function Home() {
                         </ul>
                     </div>
                     <div className={styles.sectionHead}>EDUCATION</div>
-                    <p className={styles.education}>
-                        B.A. Computer Science<br />
-                        December 2018<br />
-                        University of Iowa, Iowa City, IA
-                    </p>
+                    <div className={styles.textSection}>
+                        <Image src='/IowaHawkeyesLogo.webp' height={100} width={142} />
+                        <div>
+                            <p className={styles.education}>
+                                B.A. Computer Science<br />
+                                December 2018<br />
+                                University of Iowa, Iowa City, IA
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <br />
             </main >
