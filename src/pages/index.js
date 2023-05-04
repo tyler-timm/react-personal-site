@@ -102,7 +102,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className={styles.main}>
-                <div className={styles.resumeName}><FaUser />&nbsp;&nbsp;&nbsp;&nbsp; Tyler Timm &nbsp;&nbsp;&nbsp;&nbsp;<FaLaptopCode /></div>
+                <div className={styles.resumeName}><FaLaptopCode />&nbsp;&nbsp;&nbsp;&nbsp; Tyler Timm &nbsp;&nbsp;&nbsp;&nbsp;<FaLaptopCode /></div>
                 <div>
                     <div className={styles.sectionHead}>SKILLS</div>
                     <div className={styles.skills}>

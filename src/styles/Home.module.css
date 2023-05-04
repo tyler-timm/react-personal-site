@@ -10,8 +10,11 @@
 }
 
 .resumeName {
+    display: flex;
+    flex-direction: row;
   color: #fff;
   font-size: 3rem;
+  align-items: center;
 }
 
 .sectionHead {
@@ -58,7 +61,7 @@
 
 .imgOutline {
   filter: 
-  drop-shadow(1px 1px .75px #fff)
+    drop-shadow(1px 1px .75px #fff)
     drop-shadow(1px -1px .75px #fff)
     drop-shadow(-1px 1px .75px #fff)
     drop-shadow(-1px -1px .75px #fff);
