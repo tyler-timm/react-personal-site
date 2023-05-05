@@ -10,8 +10,8 @@
 }
 
 .resumeName {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
   color: #fff;
   font-size: 3rem;
   align-items: center;
@@ -60,9 +60,20 @@
 }
 
 .imgOutline {
-  filter: 
-    drop-shadow(1px 1px .75px #fff)
-    drop-shadow(1px -1px .75px #fff)
-    drop-shadow(-1px 1px .75px #fff)
-    drop-shadow(-1px -1px .75px #fff);
+  filter: drop-shadow(1px 1px 0.75px #fff) drop-shadow(1px -1px 0.75px #fff)
+    drop-shadow(-1px 1px 0.75px #fff) drop-shadow(-1px -1px 0.75px #fff);
+}
+
+.navContainer {
+  display: flex;
+  flex-direction: row;
+  width: 20%;
+  justify-content: space-evenly;
+  margin: 1rem;
+}
+
+.navLink {
+  font-size: 1.75rem;
+  text-decoration: none;
+  color: #2a9d8f;
 }
