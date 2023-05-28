@@ -109,7 +109,7 @@ export default function Resume() {
                     <div className={styles.sectionHead}>WORK EXPERIENCE</div>
                     <div className={styles.workExp}>
                         <div className={styles.textSection}>
-                            <Image src='/GDSLogo.png' height={100} width={253} className={styles.imgOutline} />
+                            <Image src='/GDSLogo.png' height={100} width={253} />
                             <div className={styles.workRole}>
                                 NetSuite Software Developer<br />
                                 Global Data Services, St. Louis, MO<br />
@@ -117,9 +117,8 @@ export default function Resume() {
                                 Feb 2022 - Nov 2022 (Independent Contractor - Part Time)<br />
                             </div>
                         </div>
-
                         <br />
-                        Major Projects:
+                        <span className={styles.subheading}>Major Projects:</span>
                         <br />
                         <ul className={styles.indent1}>
                             <li>Integrated Applications within "Suitelets":</li>
@@ -127,8 +126,9 @@ export default function Resume() {
                             <li className={styles.indent2}>Scheduler Component: Multiple calendar views with drag and drop events that loads data from NetSuite and updates NetSuite custom records</li>
                             <li className={styles.indent2}>Onsight Map Interface: Google Maps based Suitelet interface showing field work order, field worker, warehouse locations on google map, allows changes to be made to NetSuite records from interface</li>
                         </ul>
+                        <br />
                         <div className={styles.textSection}>
-                            <Image src='/ATISLogo.svg' height={100} width={262} className={styles.imgOutline} />
+                            <Image src='/ATIS-Logo-White.svg' height={100} width={262} />
                             <div className={styles.workRole}>
                                 Junior Developer / IT Systems Administrator<br />
                                 ATIS Elevator Inspections, St. Louis, MO<br />
@@ -136,7 +136,8 @@ export default function Resume() {
                             </div>
                         </div>
                         <br />
-                        Responsibilities:<br />
+                        <span className={styles.subheading}>Responsibilities:</span>
+                        <br />
                         <ul className={styles.indent1}>
                             <li>NetSuite feature development in JavaScript (SuiteScript)</li>
                             <li>Advanced PDF/HTML template creation for custom records and transactions</li>
@@ -145,7 +146,7 @@ export default function Resume() {
                             <li>Mobile Device Management via Intune/Microsoft Endpoint Manager</li>
                         </ul>
                         <br />
-                        Major Projects:
+                        <span className={styles.subheading}>Major Projects:</span>
                         <ul className={styles.indent1}>
                             <li>Developed and maintained elevator inspection process on NetSuite Mobile app for Virginia, Florida, Missouri, Illinois, Wisconsin, and Colorado</li>
                             <li>Created documentation and trained office staff and inspectors on process while continually soliciting feedback for improvements or necessary changes</li>
