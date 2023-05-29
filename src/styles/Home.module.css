@@ -30,6 +30,12 @@
   padding: 1rem;
 }
 
+.downloadPDF {
+  color: #e9c46a;
+  font-size: 1.75rem;
+  text-decoration: none;
+}
+
 .sectionHead {
   color: #f4a261;
   font-size: 2rem;

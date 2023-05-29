@@ -15,6 +15,7 @@ import { SiMicrosoftoffice } from "react-icons/si";
 import { FaPhone } from "react-icons/fa";
 import { FaMobile } from "react-icons/fa";
 import { SiOracle } from "react-icons/si";
+import { FaRegFilePdf } from "react-icons/fa";
 
 import { useState } from "react";
 
@@ -100,6 +101,14 @@ export default function Resume() {
             <main className={styles.main}>
                 <Header />
                 <div>
+                    <a
+                        href="/Tyler Timm - Resume.pdf"
+                        alt="alt text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.downloadPDF}>
+                        <FaRegFilePdf/> Download PDF
+                    </a>
                     <div className={styles.sectionHead}>SKILLS</div>
                     <div className={styles.skills}>
                         <ListSkills />
