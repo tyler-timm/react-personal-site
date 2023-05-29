@@ -3,7 +3,6 @@ import Image from 'next/image';
 import styles from '@/styles/Home.module.css';
 
 import Header from '@/components/Header.js';
-import Navbar from '@/components/Navbar.js'
 
 
 export default function Home() {
@@ -16,7 +15,6 @@ export default function Home() {
             </Head>
             <main className={styles.main}>
                 <Header />
-                <Navbar />
                 <br />
                 <Image src='/Llama.jpg' width={375} height={500} alt='Myself with a Llama' />
             </main >

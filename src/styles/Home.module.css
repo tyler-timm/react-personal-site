@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 4rem;
+  padding: 1rem 4rem;
   min-height: 100vh;
   font-family: sans-serif;
   background-color: #264653;
@@ -10,11 +10,24 @@
 }
 
 .resumeName {
-  display: flex;
-  flex-direction: row;
   color: #fff;
   font-size: 3rem;
+  padding-right: 2rem;
+}
+
+.navContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 1rem;
   align-items: center;
+}
+
+.navLink {
+  font-size: 1.75rem;
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem;
 }
 
 .sectionHead {
@@ -66,18 +79,4 @@
 .imgOutline {
   filter: drop-shadow(1px 1px 0.75px #fff) drop-shadow(1px -1px 0.75px #fff)
     drop-shadow(-1px 1px 0.75px #fff) drop-shadow(-1px -1px 0.75px #fff);
-}
-
-.navContainer {
-  display: flex;
-  flex-direction: row;
-  width: 20%;
-  justify-content: space-evenly;
-  margin: 1rem;
-}
-
-.navLink {
-  font-size: 1.75rem;
-  text-decoration: none;
-  color: #2a9d8f;
 }

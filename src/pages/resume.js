@@ -3,7 +3,6 @@ import Image from 'next/image';
 import styles from '@/styles/Home.module.css';
 
 import Header from '@/components/Header.js';
-import Navbar from '@/components/Navbar.js'
 
 import { FaLaptopCode } from "react-icons/fa";
 import { FaJs } from "react-icons/fa";
@@ -100,7 +99,6 @@ export default function Resume() {
             </Head>
             <main className={styles.main}>
                 <Header />
-                <Navbar />
                 <div>
                     <div className={styles.sectionHead}>SKILLS</div>
                     <div className={styles.skills}>
@@ -109,7 +107,7 @@ export default function Resume() {
                     <div className={styles.sectionHead}>WORK EXPERIENCE</div>
                     <div className={styles.workExp}>
                         <div className={styles.textSection}>
-                            <Image src='/GDSLogo.png' height={100} width={253} />
+                            <Image src='/GDS-Logo-White.png' height={100} width={253} />
                             <div className={styles.workRole}>
                                 NetSuite Software Developer<br />
                                 Global Data Services, St. Louis, MO<br />

@@ -1,8 +1,19 @@
+import Link from 'next/link';
 import styles from '@/styles/Home.module.css';
 import { FaLaptopCode } from "react-icons/fa";
 
 export default function Header() {
     return (
-        <div className={styles.resumeName}><FaLaptopCode />&nbsp;&nbsp;&nbsp;&nbsp; Tyler Timm &nbsp;&nbsp;&nbsp;&nbsp;<FaLaptopCode /></div>
+        <div className={styles.navContainer}>
+            <div className={styles.resumeName}>
+                Tyler Timm &nbsp; <FaLaptopCode color='#e9c46a'/>
+            </div>
+            <div>
+                <Link href='/' className={styles.navLink}>Home</Link>
+            </div>
+            <div>
+                <Link href='/resume' className={styles.navLink}>Resume</Link>
+            </div>
+        </div>
     )
 }
