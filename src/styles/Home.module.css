@@ -2,25 +2,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem 4rem;
+  padding: 1rem 25rem;
   min-height: 100vh;
   font-family: sans-serif;
   background-color: #264653;
   color: #fff;
 }
-
-.resumeName {
-  color: #fff;
-  font-size: 3rem;
-  padding-right: 2rem;
-}
-
 .navContainer {
   display: flex;
   flex-direction: row;
   width: 100%;
   margin: 1rem;
   align-items: center;
+  justify-content: flex-end;
+}
+
+.resumeName {
+  color: #fff;
+  font-size: 3rem;
+  padding-right: 2rem;
+  align-self: flex-start;
+  margin-right: auto;
 }
 
 .navLink {
