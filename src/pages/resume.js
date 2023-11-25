@@ -118,7 +118,7 @@ export default function Resume() {
                         <div className={styles.textSection}>
                             <Image src='/GDS-Logo-White.png' height={100} width={253} />
                             <div className={styles.workRole}>
-                                NetSuite Software Developer<br />
+                                Senior ERP Developer<br />
                                 Global Data Services, St. Louis, MO<br />
                                 Nov 2022 - Present (Full Time)<br />
                                 Feb 2022 - Nov 2022 (Independent Contractor - Part Time)<br />
