@@ -4,7 +4,7 @@ import styles from '@/styles/Home.module.css';
 
 import Header from '@/components/Header.js';
 
-import { FaJs, FaHtml5, FaCss3, FaFilePdf, FaMobile, FaRegFilePdf } from "react-icons/fa";
+import { FaJs, FaHtml5, FaCss3, FaFilePdf, FaMobile, FaRegFilePdf, FaAws } from "react-icons/fa";
 import { SiMicrosoftoffice, SiOracle } from 'react-icons/si';
 import { MdAdminPanelSettings } from "react-icons/md";
 
@@ -23,36 +23,41 @@ const skills = [
     },
     {
         key: 1,
-        name: 'NetSuite Development',
+        name: 'NetSuite Customization and Integration',
         icon: <SiOracle />
     },
     {
         key: 2,
+        name: 'AWS - Lambda, DynamoDB, Amplify, Appsync',
+        icon: <FaAws />
+    },
+    {
+        key: 3,
         name: 'HTML',
         icon: <FaHtml5 />
     },
     {
-        key: 3,
+        key: 4,
         name: 'CSS',
         icon: <FaCss3 />
     },
     {
-        key: 4,
+        key: 5,
         name: 'FreeMarker',
         icon: <FaFilePdf />
     },
     {
-        key: 5,
+        key: 6,
         name: 'NetSuite Administration',
         icon: <MdAdminPanelSettings />
     },
     {
-        key: 6,
+        key: 7,
         name: 'Microsoft 365 Administration',
         icon: <SiMicrosoftoffice />
     },
     {
-        key: 7,
+        key: 8,
         name: 'Mobile Device Management',
         icon: <FaMobile />
     }
@@ -107,10 +112,12 @@ export default function Resume() {
                         <span className={styles.subheading}>Major Projects:</span>
                         <br />
                         <ul className={styles.indent1}>
+                            <li>Integration between NetSuite and GDS's "Onsight" Mobile App: Field Service Solution</li>
                             <li>Integrated Applications within "Suitelets":</li>
-                            <li className={styles.indent2}>Custom Map Interface: Uses Google Maps API, to allow user to draw shapes on map at custom location, calulcate area and perimeter, and save map state to custom NetSuite record attached to customer</li>
+                            <li className={styles.indent2}>Custom Map Interface: Uses Google Maps API to allow user to draw shapes on map at custom location, calulcate area and perimeter, and save map state to custom NetSuite record attached to customer</li>
                             <li className={styles.indent2}>Scheduler Component: Multiple calendar views with drag and drop events that loads data from NetSuite and updates NetSuite custom records</li>
-                            <li className={styles.indent2}>Onsight Map Interface: Google Maps based Suitelet interface showing field work order, field worker, warehouse locations on google map, allows changes to be made to NetSuite records from interface</li>
+                            <li className={styles.indent2}>Onsight Map Interface: Google Maps based Suitelet interface rendering field work order, field worker, warehouse locations on google map, allows changes to be made to NetSuite records from interface</li>
+                            <li>Custom NetSuite Integrations with Stores and 3PL Providers: Products sold on Consignment</li>
                         </ul>
                         <br />
                         <div className={styles.textSection}>
