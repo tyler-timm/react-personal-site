@@ -16,7 +16,7 @@ export default function Home() {
             <main className={styles.main}>
                 <Header />
                 <br />
-                <Image src='/Llama.jpg' width={375} height={500} alt='Myself with a Llama' />
+                <Image src='/Tyler_Waterfall.jpg' width={375} height={500} alt='Tyler Timm' />
             </main >
         </>
     )
