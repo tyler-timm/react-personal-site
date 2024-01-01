@@ -91,7 +91,7 @@ export default function Resume() {
                         target="_blank"
                         rel="noopener noreferrer"
                         className={styles.downloadPDF}>
-                        <FaRegFilePdf /> Download PDF
+                        <FaRegFilePdf /> Download Resume as PDF
                     </a>
                     <div className={styles.sectionHead}>SKILLS</div>
                     <div className={styles.skills}>
