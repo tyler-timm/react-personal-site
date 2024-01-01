@@ -3,76 +3,9 @@ import Image from 'next/image';
 import styles from '@/styles/Home.module.css';
 
 import Header from '@/components/Header.js';
+import SkillsList from '@/components/SkillsList.js';
 
-import { FaJs, FaHtml5, FaCss3, FaFilePdf, FaMobile, FaRegFilePdf, FaAws } from "react-icons/fa";
-import { SiMicrosoftoffice, SiOracle } from 'react-icons/si';
-import { MdAdminPanelSettings } from "react-icons/md";
-
-const resumeSections = [
-    `Software Developer
-5949 W Park Ave, St Louis, MO 63110
-(636) 295-0846 | ttimm16@gmail.com`,
-    `Software Developer with 4+ years’ experience in CRM/ERP-based development and a wide variety of general IT functions. Passionate about expanding knowledge and gaining experience in programming and any other skills needed to create functional technology solutions.`,
-]
-
-const skills = [
-    {
-        key: 0,
-        name: 'JavaScript',
-        icon: <FaJs />
-    },
-    {
-        key: 1,
-        name: 'NetSuite Customization and Integration',
-        icon: <SiOracle />
-    },
-    {
-        key: 2,
-        name: 'AWS - Lambda, DynamoDB, Amplify, Appsync',
-        icon: <FaAws />
-    },
-    {
-        key: 3,
-        name: 'HTML',
-        icon: <FaHtml5 />
-    },
-    {
-        key: 4,
-        name: 'CSS',
-        icon: <FaCss3 />
-    },
-    {
-        key: 5,
-        name: 'FreeMarker',
-        icon: <FaFilePdf />
-    },
-    {
-        key: 6,
-        name: 'NetSuite Administration',
-        icon: <MdAdminPanelSettings />
-    },
-    {
-        key: 7,
-        name: 'Microsoft 365 Administration',
-        icon: <SiMicrosoftoffice />
-    },
-    {
-        key: 8,
-        name: 'Mobile Device Management',
-        icon: <FaMobile />
-    }
-];
-
-function ListSkills() {
-    const skillsList = skills.map(skill => {
-        if (skill.icon) {
-            return <li key={skill.key}>{skill.icon} &nbsp; {skill.name}</li>
-        } else {
-            return <li key={skill.key}>{skill.name}</li>
-        }
-    });
-    return <ul className={styles.skillsList}>{skillsList}</ul>;
-}
+import { FaRegFilePdf } from 'react-icons/fa';
 
 export default function Resume() {
     return (
@@ -93,9 +26,13 @@ export default function Resume() {
                         className={styles.downloadPDF}>
                         <FaRegFilePdf /> Download Resume as PDF
                     </a>
+                    <br /><br />
+                    <div className={styles.education}>
+                        Software Developer with 4+ years’ experience in CRM/ERP-based development and a wide variety of general IT functions. Passionate about expanding knowledge and gaining experience in development and any other skills needed to create functional technology solutions.
+                    </div>
                     <div className={styles.sectionHead}>SKILLS</div>
                     <div className={styles.skills}>
-                        <ListSkills />
+                        <SkillsList />
                     </div>
                     <div className={styles.sectionHead}>WORK EXPERIENCE</div>
                     <div className={styles.workExp}>
