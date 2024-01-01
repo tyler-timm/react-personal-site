@@ -4,20 +4,9 @@ import styles from '@/styles/Home.module.css';
 
 import Header from '@/components/Header.js';
 
-import { FaLaptopCode } from "react-icons/fa";
-import { FaJs } from "react-icons/fa";
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3 } from "react-icons/fa";
-import { FaFilePdf } from "react-icons/fa";
-import { FaDatabase } from "react-icons/fa";
+import { FaJs, FaHtml5, FaCss3, FaFilePdf, FaMobile, FaRegFilePdf } from "react-icons/fa";
+import { SiMicrosoftoffice, SiOracle } from 'react-icons/si';
 import { MdAdminPanelSettings } from "react-icons/md";
-import { SiMicrosoftoffice } from "react-icons/si";
-import { FaPhone } from "react-icons/fa";
-import { FaMobile } from "react-icons/fa";
-import { SiOracle } from "react-icons/si";
-import { FaRegFilePdf } from "react-icons/fa";
-
-import { useState } from "react";
 
 const resumeSections = [
     `Software Developer
@@ -64,18 +53,8 @@ const skills = [
     },
     {
         key: 7,
-        name: 'VOIP Phone Administration',
-        icon: <FaPhone />
-    },
-    {
-        key: 8,
         name: 'Mobile Device Management',
         icon: <FaMobile />
-    },
-    {
-        key: 9,
-        name: 'Microsoft Office Applications',
-        icon: <SiMicrosoftoffice />
     }
 ];
 
@@ -107,7 +86,7 @@ export default function Resume() {
                         target="_blank"
                         rel="noopener noreferrer"
                         className={styles.downloadPDF}>
-                        <FaRegFilePdf/> Download PDF
+                        <FaRegFilePdf /> Download PDF
                     </a>
                     <div className={styles.sectionHead}>SKILLS</div>
                     <div className={styles.skills}>
