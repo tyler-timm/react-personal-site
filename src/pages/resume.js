@@ -41,7 +41,7 @@ export default function Resume() {
                             <div className={styles.workRole}>
                                 Senior ERP Developer<br />
                                 Global Data Services, St. Louis, MO<br />
-                                Nov 2022 - Present (Full Time)<br />
+                                Nov 2022 - Jan 2024 (Full Time)<br />
                                 Feb 2022 - Nov 2022 (Independent Contractor - Part Time)<br />
                             </div>
                         </div>
@@ -60,7 +60,7 @@ export default function Resume() {
                         <div className={styles.textSection}>
                             <Image src='/ATIS-Logo-White.svg' height={100} width={262} />
                             <div className={styles.workRole}>
-                                Junior Developer / IT Systems Administrator<br />
+                                Developer/Administrator<br />
                                 ATIS Elevator Inspections, St. Louis, MO<br />
                                 March 2019 - Nov 2022<br />
                             </div>
