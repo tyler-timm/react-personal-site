@@ -28,7 +28,7 @@ export default function Resume() {
                     </a>
                     <br /><br />
                     <div className={styles.education}>
-                        Software Developer with 4+ years’ experience in CRM/ERP-based development and a wide variety of general IT functions. Passionate about expanding knowledge and gaining experience in development and any other skills needed to create functional technology solutions.
+                        Software Developer with 5+ years' experience in CRM/ERP-based development and a wide variety of general IT functions. Passionate about expanding knowledge and gaining experience in development and any other skills needed to create functional technology solutions.
                     </div>
                     <div className={styles.sectionHead}>SKILLS</div>
                     <div className={styles.skills}>
@@ -36,6 +36,22 @@ export default function Resume() {
                     </div>
                     <div className={styles.sectionHead}>WORK EXPERIENCE</div>
                     <div className={styles.workExp}>
+                        <div className={styles.textSection}>
+                            <Image src='/Thrive-Logo-White.svg' height={100} width={250} />
+                            <div className={styles.workRole}>
+                                NetSuite Developer<br />
+                                Thrive Market, Los Angeles, CA<br />
+                                Mar 2024 - Present<br />
+                            </div>
+                        </div>
+                        <br />
+                        <span className={styles.subheading}>Responsibilities:</span>
+                        <br />
+                        <ul className={styles.indent1}>
+                            <li>Integrations between NetSuite, AWS, External Databases, various other services</li>
+                            <li>NetSuite Customizations</li>
+                        </ul>
+                        <br />
                         <div className={styles.textSection}>
                             <Image src='/GDS-Logo-White.png' height={100} width={253} />
                             <div className={styles.workRole}>
