@@ -48,7 +48,7 @@ export default function Resume() {
                         <span className={styles.subheading}>Responsibilities:</span>
                         <br />
                         <ul className={styles.indent1}>
-                            <li>Integrations between NetSuite, AWS, External Databases, various other services</li>
+                            <li>Integrations between NetSuite, AWS, External Databases, various other services using Airflow</li>
                             <li>NetSuite Customizations</li>
                         </ul>
                         <br />
