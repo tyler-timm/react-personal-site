@@ -41,7 +41,7 @@ export default function Resume() {
                             <div className={styles.workRole}>
                                 NetSuite Developer<br />
                                 Thrive Market, Los Angeles, CA<br />
-                                Mar 2024 - Present<br />
+                                Mar 2024 - Mar 2025<br />
                             </div>
                         </div>
                         <br />
