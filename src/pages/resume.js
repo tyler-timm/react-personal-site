@@ -19,7 +19,7 @@ export default function Resume() {
                 <Header />
                 <div>
                     <a
-                        href="/Tyler Timm - Resume.pdf"
+                        href="/Tyler Timm - Resume 3-28-25.pdf"
                         alt="alt text"
                         target="_blank"
                         rel="noopener noreferrer"
