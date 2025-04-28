@@ -11,9 +11,6 @@ export default function Header() {
             <div>
                 <Link href='/' className={styles.navLink}>Home</Link>
             </div>
-            <div>
-                <Link href='/resume' className={styles.navLink}>Resume</Link>
-            </div>
         </div>
     )
 }
